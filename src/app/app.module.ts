@@ -8,18 +8,22 @@ import { ServerComponent } from 'src/server/server.component';
 import { ServersComponent } from './servers/servers.component';
 import { FormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/partials/header/header.component';
+import { HomeComponent } from './components/pages/home/home.component';
+import { RatingModule } from 'ng-starrating';
 @NgModule({
   declarations: [
     AppComponent,
     ServerComponent,
     ServersComponent,
-    HeaderComponent
+    HeaderComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    RatingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

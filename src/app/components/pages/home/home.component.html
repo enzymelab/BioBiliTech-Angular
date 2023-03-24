@@ -1,0 +1,41 @@
+<ul>
+  <li *ngFor = "let antibody of antibodies">
+    <a routerLink="/antibody/{{antibody.id}}">
+      <img [src]="antibody.imageurl" [alt]="antibody.name">
+      <div class="content">
+        <div class="name">
+          {{antibody.name}}
+        </div>
+        <span class="favorite" [ngClass]="antibody.favorite?'color=red':'color=grey'" >
+          ❤
+        </span>
+        <div class="stars">
+          <star-rating
+          [value] = "antibody.stars"
+          [totalstars] = "5"
+          checkedcolor = "red"
+          uncheckedcolor = "black"
+          size = "22px"
+          [readonly]="true">
+        </star-rating>
+        </div>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor = "let origin of antibody.origins">
+              {{origin}}
+            </span>
+          </div>
+          <div class="cook-time">
+            <span>Catalog #</span>
+            {{antibody.catNumber}}
+          </div>
+        </div>
+        <div class="price">
+          <span >
+            {{antibody.price | currency}}
+          </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
