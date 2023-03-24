@@ -6,7 +6,7 @@
         <div class="name">
           {{antibody.name}}
         </div>
-        <span class="favorite" [ngClass]="antibody.favorite?'color=red':'color=grey'" >
+        <span class="favorite" [ngClass]="antibody.favorite?'':'not'" >
           ❤
         </span>
         <div class="stars">
@@ -25,7 +25,7 @@
               {{origin}}
             </span>
           </div>
-          <div class="cook-time">
+          <div class="catalog">
             <span>Catalog #</span>
             {{antibody.catNumber}}
           </div>
