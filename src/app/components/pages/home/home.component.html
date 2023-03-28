@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+  integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+<app-search></app-search>
+<app-tags></app-tags>
 <ul>
   <li *ngFor = "let antibody of antibodies">
     <a routerLink="/antibody/{{antibody.id}}">
@@ -6,9 +11,9 @@
         <div class="name">
           {{antibody.name}}
         </div>
-        <span class="favorite" [ngClass]="antibody.favorite?'':'not'" >
-          ❤
-        </span>
+        <div class="favorite" [ngClass]="antibody.favorite?'':'not'" >
+          <i class="fa-solid fa-heart"></i>
+        </div>
         <div class="stars">
           <star-rating
           [value] = "antibody.stars"

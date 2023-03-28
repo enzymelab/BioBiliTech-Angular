@@ -1,4 +1,6 @@
 import { Antibody } from './app/shared/models/food';
+import { Tag } from './app/shared/models/Tag';
+
 
 export const sample_antibody: Antibody[] = [
   {
@@ -65,4 +67,14 @@ export const sample_antibody: Antibody[] = [
     imageurl: './assets/A5400_WB_01_(94190).jpg',
     tags: ['WB'],
   },
+]
+
+
+export const sample_tags: Tag[] = [
+  { name: 'All', count: 6 },
+  { name: 'WB', count: 6 },
+  { name: 'IHC', count: 3 },
+  { name: 'IF', count: 1 },
+  { name: 'IP', count: 1 },
+
 ]
