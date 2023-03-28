@@ -1,5 +1,5 @@
 import { AntibodyService } from '../../../services/antibody.service';
-import { Antibody } from './../../../shared/models/food';
+import { Antibody } from '../../../shared/models/antibody';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

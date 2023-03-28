@@ -1,4 +1,4 @@
-import { Antibody } from './app/shared/models/food';
+import { Antibody } from './app/shared/models/antibody';
 import { Tag } from './app/shared/models/Tag';
 
 
@@ -9,7 +9,7 @@ export const sample_antibody: Antibody[] = [
     price: 55,
     catNumber: 'A19693',
     favorite: true,
-    origins: ['Human,','Mouse'],
+    origins: ['Human','Mouse'],
     stars: 4.0,
     imageurl: './assets/A5400_IF_01_(16808).jpg',
     tags: ['WB','IHC','IP'],
@@ -20,7 +20,7 @@ export const sample_antibody: Antibody[] = [
     price: 65,
     catNumber: 'A10993',
     favorite: false,
-    origins: ['Human,','Rat'],
+    origins: ['Human','Rat'],
     stars: 4.0,
     imageurl: './assets/A5400_IF_02_(16809).jpg',
     tags: ['WB'],
@@ -31,7 +31,7 @@ export const sample_antibody: Antibody[] = [
     price: 55,
     catNumber: 'A13471',
     favorite: false,
-    origins: ['Human,','Mouse,','Rat'],
+    origins: ['Human','Mouse','Rat'],
     stars: 4.0,
     imageurl: './assets/A5400_IHC_01_(16804).jpg',
     tags: ['WB','IHC'],
@@ -42,7 +42,7 @@ export const sample_antibody: Antibody[] = [
     price: 70,
     catNumber: 'A19703',
     favorite: false,
-    origins: ['Human,','Mouse,','Rat'],
+    origins: ['Human','Mouse','Rat'],
     stars: 4.0,
     imageurl: './assets/A5400_IHC_02_(16806).jpg',
     tags: ['WB'],
@@ -52,7 +52,7 @@ export const sample_antibody: Antibody[] = [
     price: 85,
     catNumber: 'A19684',
     favorite: true,
-    origins: ['Human,','Mouse,','Rat'],
+    origins: ['Human','Mouse','Rat'],
     stars: 5.0,
     imageurl: './assets/A5400_IHC_03_(16807).jpg',
     tags: ['WB','IHC','IF'],

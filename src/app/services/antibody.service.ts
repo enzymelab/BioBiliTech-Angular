@@ -1,5 +1,5 @@
 import { sample_antibody, sample_tags } from '../../data';
-import { Antibody } from '../shared/models/food';
+import { Antibody } from '../shared/models/antibody';
 import { Injectable } from '@angular/core';
 import { Tag } from '../shared/models/Tag';
 
@@ -24,5 +24,9 @@ export class AntibodyService {
     return tag == "All" ?
     this.getAll():
     this.getAll().filter(antibody => antibody.tags?.includes(tag));
+  }
+  getAntibodyById(antibodyId: string): Antibody{
+    //?? because previous sentence are not defined
+    return this.getAll().find(antibody => antibody.id == antibodyId) ?? new Antibody();
   }
 }

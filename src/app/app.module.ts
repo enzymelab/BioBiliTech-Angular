@@ -12,6 +12,8 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { RatingModule } from 'ng-starrating';
 import { SearchComponent } from './components/partials/search/search.component';
 import { TagsComponent } from './components/patials/tags/tags.component';
+import { AntibodyPageComponent } from './components/pages/antibody-page/antibody-page.component';
+import { CartPageComponent } from './components/pages/cart-page/cart-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { TagsComponent } from './components/patials/tags/tags.component';
     HeaderComponent,
     HomeComponent,
     SearchComponent,
-    TagsComponent
+    TagsComponent,
+    AntibodyPageComponent,
+    CartPageComponent
   ],
   imports: [
     BrowserModule,

@@ -7,7 +7,7 @@ import { StarRatingComponent } from 'ng-starrating/public-api';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-first-angular-app';
+  title = 'BioBili Technology';
   constructor() { }
 
   ngOnInit() { }
