@@ -18,8 +18,11 @@ export class AntibodyPageComponent {
     })
   }
 
+
   addToCart() {
     this.cartService.addToCart(this.antibody);
-    this.router.navigateByUrl('./cart-page');
+    this.router.navigateByUrl('/cart-page');
   }
+
+
 }
